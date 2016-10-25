@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "babel-node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "PORT=3051 mocha --compilers js:babel-core/register --reporter spec --full-trace ./test"
   },
   "keywords": [],
   "author": "",
@@ -21,7 +21,11 @@
     "babel-polyfill": "^6.16.0",
     "babel-preset-es2015": "^6.16.0",
     "babel-register": "^6.16.3",
-    "casual": "^1.5.6"
+    "casual": "^1.5.6",
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2",
+    "supertest": "^2.0.1",
+    "supertest-as-promised": "^4.0.0"
   },
   "description": ""
 }

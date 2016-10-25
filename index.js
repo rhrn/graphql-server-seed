@@ -6,7 +6,7 @@ import Schema from './data/schema';
 import Mocks from './data/mocks';
 import Resolvers from './data/resolvers';
 
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 const app = express();
 
 const executableSchema = makeExecutableSchema({
@@ -33,3 +33,4 @@ app.listen(PORT, () => console.log(
   `GraphQL Server is now running on http://localhost:${PORT}/graphql`
 ))
 
+export default app;

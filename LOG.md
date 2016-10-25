@@ -11,4 +11,5 @@ mkdir data
 @ data/mocks.js
 @ data/resolvers.js
 @ index.js
-
+mkdir test
+npm i -D mocha@latest supertest@latest supertest-as-promised@latest chai@latest
