@@ -2,7 +2,7 @@ import { expect } from 'chai'
 import { introspectionQuery } from 'graphql'
 import request from 'supertest-as-promised'
 
-import app from '../'
+import app from '../app'
 
 describe('App test', () => {
 

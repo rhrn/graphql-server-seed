@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "babel-node index.js",
-    "test": "PORT=3051 mocha --compilers js:babel-core/register --reporter spec --full-trace ./test"
+    "test": "mocha --compilers js:babel-core/register --reporter spec --full-trace ./test"
   },
   "keywords": [],
   "author": "",
